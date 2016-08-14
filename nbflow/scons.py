@@ -8,7 +8,7 @@ def build_cmd(notebook):
     cmd = [
         "jupyter", "nbconvert",
         "--log-level=ERROR",
-        "--ExecutePreprocessor.timeout=120",
+        "--ExecutePreprocessor.timeout=1200",
         "--execute",
         "--inplace",
         "--to", "notebook"
